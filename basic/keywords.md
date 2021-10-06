@@ -58,5 +58,6 @@ From the above the following data set keywords are needed:
 9. URI
 10. homepage 
 11. path
+12. description
 
 
