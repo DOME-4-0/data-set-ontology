@@ -1,6 +1,6 @@
 To keep things as simple as needed for the prototype, lets take the following basic examples and distil the bare minimum needed keywords for the DOME 4.0 ontology. Note, that we do not consider DCAT as an ontology yet, but a taxonomy, hence we use the terms as keywords to be otologised in EMMO.
 
-''' 
+ `
 :catalog
   a dcat:Catalog ;
   dcterms:title "Imaginary Catalog"@en ;
@@ -41,7 +41,7 @@ To keep things as simple as needed for the prototype, lets take the following ba
   dcat:distribution :dataset-001-csv ;
   .
 
-'''
+`
 
 
 
