@@ -51,16 +51,15 @@ To keep things as simple as needed for the prototype, lets take the following ba
 From the above the following data set keywords are needed:
 
 The ` --> ` denotes the EMMO classes that correspond to the DCterms. 
-0. DCTERM       -->   EMMO Class
-1. Dataset      -->  Data (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title)
-3. title        --> Name [arbitrary string connected to something, and its a property at same time] (it is general but when applied to a data it is like a title)
-4. keyword      --> [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
-5. creator      --> [arbitrary string connected to something, and its a property at same time] 
-6. publisher    --> the user (agent) that made the item available **on DOME**.   
-7. issued       --> [date]
-8. publisher    --> 
-9. license      -->
-10. source       --> 
+0. DCTERM       -->   **EMMO Class/preffered label**
+1. Dataset      -->   **Data (Class0** (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title)
+3. title        -->   **Name  (preferred label)** [arbitrary string connected to something, and its a property at same time] (it is general but when applied to a data it is like a title)
+4. keyword      -->   **Keyword  (preferred label)** [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
+5. creator      -->   **Creator (preffered label)** [arbitrary string connected to something, and its a property at same time] 
+6. publisher    -->   **Publisher (preferred label)** the user (agent) that made the item available **on DOME**.   
+7. issued       -->   [date]
+9. license      -->   
+10. source      --> 
 11. URI         --> 
 12. homepage    --> 
 13. path        --> 
