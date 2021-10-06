@@ -41,12 +41,12 @@ To keep things as simple as needed for the prototype, lets take the following ba
   dcat:distribution :dataset-001-csv ;
   .
 
-```javascript
-
+```
 
 
 
 From the above the following data set keywords are needed:
+
 1. Dataset
 2. title 
 3. keyword
