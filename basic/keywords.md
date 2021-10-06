@@ -1,4 +1,7 @@
 To keep things as simple as needed for the prototype, lets take the following basic examples and distil the bare minimum needed keywords for the DOME 4.0 ontology. Note, that we do not consider DCAT as an ontology yet, but a taxonomy, hence we use the terms as keywords to be otologised in EMMO.
+
+
+(the below, is a copy from the basic examples of DCterms)
 ```javascript
 
 :catalog
@@ -52,20 +55,25 @@ The ` --> ` denotes the EMMO classes that correspond to the DCterms.
 1. Dataset      -->  Data (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title)
 3. title        --> Name [arbitrary string connected to something, and its a property at same time] (it is general but when applied to a data it is like a title)
 4. keyword      --> [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
-5. creator      --> role in the holistic branch, part of the process of data creation, and 
-6. issued       --> [date]
-7. publisher    --> 
-8. license      -->
-9. source       --> 
-10. URI         --> 
-11. homepage    --> 
-12. path        --> 
-13. description -->
+5. creator      --> [arbitrary string connected to something, and its a property at same time] 
+6. publisher    --> the user (agent) that made the item available **on DOME**.   
+7. issued       --> [date]
+8. publisher    --> 
+9. license      -->
+10. source       --> 
+11. URI         --> 
+12. homepage    --> 
+13. path        --> 
+14. description -->
+
+# Elucidations 
+* keyword can be a string that can be used to represent a property, or a property that refers to something specific. 
 
 
-keyword can be a string that can be used to represent a property, or a property that refers to something specific. 
-
-
-creator: there are different types of creators, are they the ones doing the measurement, or preparing the data, or uploaing the data etc. 
+* creator: there are different types of creators, are they the ones doing the measurement, or preparing the data, or uploaing the data etc. 
 
 in DCterm it is: `The entity responsible for producing the resource. ` 
+in EMMO role in the holistic branch, part of the process of data creation, and 
+creator: the one responsible for creating the resource according to the publisher. i.e., it is not semantically llinked in the ontology.
+
+Publisher: The publisher can assign maintainer, we do not yet support this.
