@@ -48,7 +48,7 @@ To keep things as simple as needed for the prototype, lets take the following ba
 From the above the following data set keywords are needed:
 
 1. Dataset
-2. title 
+2. title (this is actually name, according to DCterm too)
 3. keyword
 4. creator 
 5. issued
