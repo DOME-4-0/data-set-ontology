@@ -47,17 +47,25 @@ To keep things as simple as needed for the prototype, lets take the following ba
 
 From the above the following data set keywords are needed:
 
-1. Dataset
-2. title (this is actually name, according to DCterm too)
-3. keyword
-4. creator 
-5. issued
-6. publisher
-7. license
-8. source
-9. URI
-10. homepage 
-11. path
-12. description
+The ` --> ` denotes the EMMO classes that correspond to the DCterms. 
+0. DCTERM       -->   EMMO Class
+1. Dataset      -->  Data (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title)
+3. title        --> Name [arbitrary string connected to something, and its a property at same time] (it is general but when applied to a data it is like a title)
+4. keyword      --> [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
+5. creator      --> role in the holistic branch, part of the process of data creation, and 
+6. issued       --> [date]
+7. publisher    --> 
+8. license      -->
+9. source       --> 
+10. URI         --> 
+11. homepage    --> 
+12. path        --> 
+13. description -->
 
 
+keyword can be a string that can be used to represent a property, or a property that refers to something specific. 
+
+
+creator: there are different types of creators, are they the ones doing the measurement, or preparing the data, or uploaing the data etc. 
+
+in DCterm it is: `The entity responsible for producing the resource. ` 
