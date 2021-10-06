@@ -57,22 +57,18 @@ The ` --> ` denotes the EMMO classes that correspond to the DCterms.
 4. keyword      -->   **Keyword  (preferred label)** [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
 5. creator      -->   **Creator (preffered label)** [arbitrary string connected to something, and its a property at same time] 
 6. publisher    -->   **Publisher (preferred label)** the user (agent) that made the item available **on DOME**.   
-7. issued       -->   [date]
-9. license      -->   
-10. source      --> 
-11. URI         --> 
-12. homepage    --> 
-13. path        --> 
-14. description -->
+7. issued       -->   ***hasIssueDate*** **IssueDate** relation points to a class [date]
+9. license      -->   ***hasLicense* LicenseDocument**
+10. source      -->   ***hasSource* Source**.  (Source is a URI or IRI). 
+11. URI         -->   ***hasAdress* Adress** (data type, literal)
+12. homepage    -->   ***hasHomePage* HomePage**
+14. description -->   ***hasDescription* Description (annotation)**
 
 # Elucidations 
 * keyword can be a string that can be used to represent a property, or a property that refers to something specific. 
-
-
 * creator: there are different types of creators, are they the ones doing the measurement, or preparing the data, or uploaing the data etc. 
-
-in DCterm it is: `The entity responsible for producing the resource. ` 
-in EMMO role in the holistic branch, part of the process of data creation, and 
-creator: the one responsible for creating the resource according to the publisher. i.e., it is not semantically llinked in the ontology.
-
-Publisher: The publisher can assign maintainer, we do not yet support this.
+* in DCterm it is: `The entity responsible for producing the resource. ` 
+* in EMMO role in the holistic branch, part of the process of data creation, and 
+* creator: the one responsible for creating the resource according to the publisher. i.e., it is not semantically llinked in the ontology.
+* Publisher: The publisher can assign maintainer, we do not yet support this. The publisher is also the one responsible for the DOME data set consisting of the aboce metadata (the 14 elements). 
+* License is given by the publisher and we only assume it is consistent with what may be defined in the actual data. 
