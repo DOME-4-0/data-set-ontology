@@ -55,8 +55,17 @@ The ` --> ` denotes the EMMO classes that correspond to the DCterms.
 1. Dataset      -->   **Data (Class0** (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title)
    Dataset in DCAT refers to the actual container of the data as defined in EMMO, hence, we would define DCAT dataset as a subclass of EMMO:Data that in addition to descirbing the actual data, is curated, or published by a single source and available to download by multitude of formats. We can then, under dataset define files, ftps sources, hdf5, etc, i.e. more specific datasets. 
 3. title        -->   **Name  (preferred label)** [arbitrary string connected to something, and its a property at same time] (it is general but when applied to a data it is like a title)
+   this is simple, we use annotation for it. chck the individual myDataset, agents, or tools in DOME must make sure we enforce this in implementation. 
 4. keyword      -->   **Keyword  (preferred label)** [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
-5. creator      -->   **Creator (preffered label)** [arbitrary string connected to something, and its a property at same time] 
+   - we consider strinct keywords, and those that are aligned with ontology (EMMO dataset). 
+   - we offer support for both, and we call them: 
+     - any keyword in the ontology can be used in teh **SemanticKeywords** (constrained annoatation, as it is done by the external, and term points to an IRI not a term so we are future compatible). This may be further subclassed into various categories, like the type of models, experiments, or even datasets. Note that the dataset itself can also be subclassed further to give meaning to the syntactic entity, rendering it semantic essentially (e.g., an excell file is a syntactic file, abut is semantically defined in EMMO)..  
+       - TypeKeyword: say something (strong) about the type, points to an IRI to which the individual is an RDF type
+       - ProeprtyKeyword; say something about the data set, does not emply its a type but says to which entity the data set is about in some way as defined by the creator. 
+     - any keyword (label, annotation etc.) not in the ontology, is a **syntacticKeyword* (points to nnothinh, and is simple a label, availabl for open searches and other tools, but looses the power of ontoloyg, should be used only when no existing SemanticKeywords available).    
+     - dealing with the list of keywords: 
+5. creator      -->   **Creator (preffered label)** [arbitrary string connected to something, and its a property at s
+ame time] 
 6. publisher    -->   **Publisher (preferred label)** the user (agent) that made the item available **on DOME**.   
 7. issued       -->   ***hasIssueDate*** **IssueDate** relation points to a class [date]
 9. license      -->   ***hasLicense* LicenseDocument**
