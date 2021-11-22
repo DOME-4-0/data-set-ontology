@@ -53,7 +53,7 @@ From the above the following data set keywords are needed:
 The ` --> ` denotes the EMMO classes that correspond to the DCterms. 
 0. DCTERM       -->   **EMMO Class/preffered label**
 1. Dataset      -->   **Data (Class0** (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title)
-   Dataset in DCAT refers to the actual container of the data as defined in EMMO, hence, we would define DCAT dataset as a subclass of EMMO:Data that in addition to descirbing the actual data, is curated, or published by a single source and available to download by multitude of formats. We can then, under dataset define files, ftps sources, hdf5, etc, i.e. more specific datasets. 
+   Dataset in DCAT refers to the actual container of the data as defined in EMMO, hence, we would define DCAT dataset as a subclass of EMMO:Data that in addition to describing the actual data, is curated, or published by a single source and available to download by multitude of formats. We can then, under dataset define more specific datasets according to thir scope. The format is addressed by the EMMO:Language subclasses that implements the DCAT requirement that a dataset can be expressed in more than one format.
 3. title        -->   **Name  (preferred label)** [arbitrary string connected to something, and its a property at same time] (it is general but when applied to a data it is like a title)
    this is simple, we use annotation for it. chck the individual myDataset, agents, or tools in DOME must make sure we enforce this in implementation. 
 4. keyword      -->   **Keyword  (preferred label)** [arbitrary string connected to something, and its a property at same time]  (this is before the ontology, not a reductionist property). 
