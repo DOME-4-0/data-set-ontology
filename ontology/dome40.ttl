@@ -1,0 +1,426 @@
+@prefix : <http://emmo.info/emmo/domain/dome40#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://emmo.info/emmo/domain/dome40> .
+
+<http://emmo.info/emmo/domain/dome40> rdf:type owl:Ontology ;
+                                       owl:imports <http://emmo.info/emmo/1.0.0-beta2/middle> ,
+                                                   <http://www.w3.org/ns/dcat> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_48f708c5_1404_4090_9851_2247b8ad7643
+:EMMO_48f708c5_1404_4090_9851_2247b8ad7643 rdf:type owl:AnnotationProperty ;
+                                           rdfs:comment "It points to an EMMO IRI to which the individual is rdf:type."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "TypeKeyword"@en ;
+                                           rdfs:subPropertyOf :EMMO_9a411389_a2d1_4b23_92cd_d47cde0a91e4 .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_9a38c466_0085_4e3a_abb1_af68aaa8d44a
+:EMMO_9a38c466_0085_4e3a_abb1_af68aaa8d44a rdf:type owl:AnnotationProperty ;
+                                           rdfs:comment "It says to which conept the dataset is about."@en ,
+                                                        "The individual is a dataset that stands as a property to a water molecule."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "PropertyKeyword"@en ;
+                                           rdfs:subPropertyOf :EMMO_9a411389_a2d1_4b23_92cd_d47cde0a91e4 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :EMMO_9a38c466_0085_4e3a_abb1_af68aaa8d44a ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "It says to which conept the dataset is about."@en ;
+   <http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a> "My dataset is about water molecules."@en
+ ] .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_9a411389_a2d1_4b23_92cd_d47cde0a91e4
+:EMMO_9a411389_a2d1_4b23_92cd_d47cde0a91e4 rdf:type owl:AnnotationProperty ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "SemanticKeyword"@en ;
+                                           rdfs:range <http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_d42e617b_fde1_4ddd_bff2_216329ba3304
+:EMMO_d42e617b_fde1_4ddd_bff2_216329ba3304 rdf:type owl:AnnotationProperty ;
+                                           rdfs:comment "Free for all keyword describing the dataset."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "SyntacticKeyword"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96
+:EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "SKOSRelation"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_13a502d5_6a2f_4c40_83e3_3bdc51354e19
+:EMMO_13a502d5_6a2f_4c40_83e3_3bdc51354e19 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "FOAFRelation"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_8fb67d92_9752_4326_8ec2_6245cd5812c5
+:EMMO_8fb67d92_9752_4326_8ec2_6245cd5812c5 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "DCTERMSRelation"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8
+:EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "DCATRelation"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_bcfe4dfc_7d00_4719_97fa_8d3e93c5a442
+:EMMO_bcfe4dfc_7d00_4719_97fa_8d3e93c5a442 rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "RDFRelation"@en .
+
+
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdfs:subPropertyOf :EMMO_8fb67d92_9752_4326_8ec2_6245cd5812c5 .
+
+
+###  http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> rdfs:subPropertyOf :EMMO_8fb67d92_9752_4326_8ec2_6245cd5812c5 .
+
+
+###  http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> rdfs:subPropertyOf :EMMO_8fb67d92_9752_4326_8ec2_6245cd5812c5 .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#member
+rdfs:member rdfs:subPropertyOf :EMMO_bcfe4dfc_7d00_4719_97fa_8d3e93c5a442 .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdfs:subPropertyOf :EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96 .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdfs:subPropertyOf :EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96 .
+
+
+###  http://www.w3.org/2004/02/skos/core#member
+<http://www.w3.org/2004/02/skos/core#member> rdfs:subPropertyOf :EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96 .
+
+
+###  http://www.w3.org/2004/02/skos/core#memberList
+<http://www.w3.org/2004/02/skos/core#memberList> rdfs:subPropertyOf :EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96 .
+
+
+###  http://www.w3.org/2004/02/skos/core#semanticRelation
+<http://www.w3.org/2004/02/skos/core#semanticRelation> rdfs:subPropertyOf :EMMO_088f134d_9cd3_4ada_acde_42edc5e6ae96 .
+
+
+###  http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#catalog
+<http://www.w3.org/ns/dcat#catalog> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#compressFormat
+<http://www.w3.org/ns/dcat#compressFormat> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#contactPoint
+<http://www.w3.org/ns/dcat#contactPoint> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#dataset
+<http://www.w3.org/ns/dcat#dataset> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#endpointDescription
+<http://www.w3.org/ns/dcat#endpointDescription> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#endpointURL
+<http://www.w3.org/ns/dcat#endpointURL> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#hadRole
+<http://www.w3.org/ns/dcat#hadRole> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#landingPage
+<http://www.w3.org/ns/dcat#landingPage> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#mediaType
+<http://www.w3.org/ns/dcat#mediaType> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#packageFormat
+<http://www.w3.org/ns/dcat#packageFormat> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#qualifiedRelation
+<http://www.w3.org/ns/dcat#qualifiedRelation> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#record
+<http://www.w3.org/ns/dcat#record> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#servesDataset
+<http://www.w3.org/ns/dcat#servesDataset> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#service
+<http://www.w3.org/ns/dcat#service> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/dcat#themeTaxonomy
+<http://www.w3.org/ns/dcat#themeTaxonomy> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#alternateOf
+<http://www.w3.org/ns/prov#alternateOf> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#atLocation
+<http://www.w3.org/ns/prov#atLocation> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#hadActivity
+<http://www.w3.org/ns/prov#hadActivity> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#hadGeneration
+<http://www.w3.org/ns/prov#hadGeneration> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#hadPlan
+<http://www.w3.org/ns/prov#hadPlan> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#hadRole
+<http://www.w3.org/ns/prov#hadRole> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#hadUsage
+<http://www.w3.org/ns/prov#hadUsage> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#influenced
+<http://www.w3.org/ns/prov#influenced> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#influencer
+<http://www.w3.org/ns/prov#influencer> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#qualifiedInfluence
+<http://www.w3.org/ns/prov#qualifiedInfluence> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> rdfs:subPropertyOf :EMMO_b6610458_02b3_448c_8dbb_f51a719e1ab8 .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdfs:subPropertyOf :EMMO_13a502d5_6a2f_4c40_83e3_3bdc51354e19 .
+
+
+###  http://xmlns.com/foaf/0.1/page
+<http://xmlns.com/foaf/0.1/page> rdfs:subPropertyOf :EMMO_13a502d5_6a2f_4c40_83e3_3bdc51354e19 .
+
+
+###  http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> rdfs:subPropertyOf :EMMO_13a502d5_6a2f_4c40_83e3_3bdc51354e19 .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_21ffef6a_dd65_40f0_8f75_a1b8e8fddb42
+:EMMO_21ffef6a_dd65_40f0_8f75_a1b8e8fddb42 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c015070b_b909_4fe5_aab5_a17019e4c5e2 ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "CrystalDataSet"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7
+:EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 rdf:type owl:Class ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "DCAT"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_8c14151d_7dc4_4c95_9d2b_b8546ff481e1
+:EMMO_8c14151d_7dc4_4c95_9d2b_b8546ff481e1 rdf:type owl:Class ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "DCTERMS"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_9189d0be_e651_4a26_9cf9_a38f617be814
+:EMMO_9189d0be_e651_4a26_9cf9_a38f617be814 rdf:type owl:Class ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "FOAF"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_9ad2eb92_ac81_4524_97aa_6596dea55737
+:EMMO_9ad2eb92_ac81_4524_97aa_6596dea55737 rdf:type owl:Class ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "SKOS"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_ae0cc6b6_c54d_4a21_98bf_d584df483001
+:EMMO_ae0cc6b6_c54d_4a21_98bf_d584df483001 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c015070b_b909_4fe5_aab5_a17019e4c5e2 ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "FieldDataSet"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_b734cc27_a59b_4db1_8cd5_e60492d1bb51
+:EMMO_b734cc27_a59b_4db1_8cd5_e60492d1bb51 rdf:type owl:Class ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "RDF"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_c015070b_b909_4fe5_aab5_a17019e4c5e2
+:EMMO_c015070b_b909_4fe5_aab5_a17019e4c5e2 rdf:type owl:Class ;
+                                           owl:equivalentClass <http://www.w3.org/ns/dcat#Dataset> ;
+                                           rdfs:subClassOf <http://emmo.info/emmo#EMMO_d9588363_bf09_4d5d_95d3_cd9b203a3b61> ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "DataSet"@en .
+
+
+###  http://purl.org/dc/dcmitype/Service
+<http://purl.org/dc/dcmitype/Service> rdfs:subClassOf :EMMO_8c14151d_7dc4_4c95_9d2b_b8546ff481e1 .
+
+
+###  http://purl.org/dc/terms/Location
+<http://purl.org/dc/terms/Location> rdfs:subClassOf :EMMO_8c14151d_7dc4_4c95_9d2b_b8546ff481e1 .
+
+
+###  http://purl.org/dc/terms/MediaType
+<http://purl.org/dc/terms/MediaType> rdfs:subClassOf :EMMO_8c14151d_7dc4_4c95_9d2b_b8546ff481e1 .
+
+
+###  http://purl.org/dc/terms/PeriodOfTime
+<http://purl.org/dc/terms/PeriodOfTime> rdfs:subClassOf :EMMO_8c14151d_7dc4_4c95_9d2b_b8546ff481e1 .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+rdf:List rdfs:subClassOf :EMMO_b734cc27_a59b_4db1_8cd5_e60492d1bb51 .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdfs:subClassOf :EMMO_b734cc27_a59b_4db1_8cd5_e60492d1bb51 .
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> rdfs:subClassOf :EMMO_9ad2eb92_ac81_4524_97aa_6596dea55737 .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:subClassOf :EMMO_9ad2eb92_ac81_4524_97aa_6596dea55737 .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdfs:subClassOf :EMMO_9ad2eb92_ac81_4524_97aa_6596dea55737 .
+
+
+###  http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> rdfs:subClassOf <http://emmo.info/emmo#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8> .
+
+
+###  http://www.w3.org/ns/dcat#CatalogRecord
+<http://www.w3.org/ns/dcat#CatalogRecord> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdfs:subClassOf <http://emmo.info/emmo#EMMO_d9588363_bf09_4d5d_95d3_cd9b203a3b61> .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/dcat#Relationship
+<http://www.w3.org/ns/dcat#Relationship> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/dcat#Role
+<http://www.w3.org/ns/dcat#Role> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#Influence
+<http://www.w3.org/ns/prov#Influence> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#InstantaneousEvent
+<http://www.w3.org/ns/prov#InstantaneousEvent> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#Location
+<http://www.w3.org/ns/prov#Location> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://www.w3.org/ns/prov#Role
+<http://www.w3.org/ns/prov#Role> rdfs:subClassOf :EMMO_5029d62c_56ce_4162_ab7a_6d76a59a59b7 .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> rdfs:subClassOf :EMMO_9189d0be_e651_4a26_9cf9_a38f617be814 .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdfs:subClassOf :EMMO_9189d0be_e651_4a26_9cf9_a38f617be814 .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_7ffb2a89_cc4b_4b98_bbea_9762c20d8f97
+:EMMO_7ffb2a89_cc4b_4b98_bbea_9762c20d8f97 rdf:type owl:NamedIndividual ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "myKeyword"@en .
+
+
+###  http://emmo.info/emmo/domain/dome40#EMMO_8cf823ef_173d_4604_b4a1_a2f4b7e8ff78
+:EMMO_8cf823ef_173d_4604_b4a1_a2f4b7e8ff78 rdf:type owl:NamedIndividual ,
+                                                    <http://www.w3.org/ns/dcat#Dataset> ;
+                                           :EMMO_48f708c5_1404_4090_9851_2247b8ad7643 :EMMO_ae0cc6b6_c54d_4a21_98bf_d584df483001 ;
+                                           <http://purl.org/dc/terms/title> "Title of my dataset"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "myDataset"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
