@@ -1,14 +1,10 @@
 # Introduction 
 
-The aim is to be able to create a top level data set ontology and consequently implement various tools that allow DOME data sets to be managed (curated) while supporting the wider data community with its rich choice of local standards. The ontology is developed in line with teh main requirements as depicted in [D1.3: Architecture of DOME](https://github.com/DOME-4-0/DOME-Architecture).
+The aim is to be able to create a high level data set ontology and consequently implement various tools that allow DOME 4.0 data sets to be managed and curated while supporting the wider data community with its rich choice of various standards, specifically those supporting W3C standards. The ontology is developed in line with the main requirements as depicted in [D1.3: Architecture of DOME](https://github.com/DOME-4-0/DOME-Architecture).
 
+To keep things as simple as needed for the prototype, lets take the following basic examples and distill the bare minimum needed keywords for the DOME 4.0 ontology. 
 
-
-
-To keep things as simple as needed for the prototype, lets take the following basic examples and distil the bare minimum needed keywords for the DOME 4.0 ontology. Note, that we do not consider DCAT as an ontology yet, but a taxonomy, hence we use the terms as keywords to be otologised in EMMO.
-
-
-(the below, is a copy from the basic examples of DCterms)
+## For reference here are some DCAT examples (version 2.0) 
 ```javascript
 
 :catalog
@@ -56,11 +52,10 @@ To keep things as simple as needed for the prototype, lets take the following ba
 
 
 From the above the following data set keywords are needed:
-
 The `-->` denotes the EMMO classes that correspond to the DCterms. 
-1. `DCTERM`       -->   **`EMMO` Class/preffered label**
+1. `DCTERM`       -->   **`EMMO` Class/preferred label**
 
-1. `Dataset`      -->   **`Data Class`**
+2. `Dataset`      -->   **`Data Class`**
 
 A `Dataset` in DCAT refers to the actual container of the data as defined in EMMO, hence we define DCAT dataset as a subclass of `EMMO:Data` that in addition to descirbing the actual data, is curated, or published by a single source and available to download by multitude of formats. We can then, under this Dataset define more specialisations, such as files, ftps sources, hdf5, etc, i.e. more specific datasets, like electronicDataSet, etc.
 
@@ -105,7 +100,7 @@ about the type of the
        - ProeprtyKeyword; say something about the data set, does not emply its a type but says to which entity the data set is about in some way as defined by the creator. 
      - any keyword (label, annotation etc.) not in the ontology, is a **syntacticKeyword* (points to nnothinh, and is simple a label, availabl for open searches and other tools, but looses the power of ontoloyg, should be used only when no existing SemanticKeywords available).    
      - dealing with the list of keywords: 
-5. creator      -->   **Creator (preffered label)** [arbitrary string connected to something, and its a property at same time]
+1. creator      -->   **Creator (preffered label)** [arbitrary string connected to something, and its a property at same time]
 
  in DOME it is always referring to Individual
 
