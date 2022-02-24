@@ -10,7 +10,12 @@
 <http://emmo.info/emmo/domain/dome40-emmo> rdf:type owl:Ontology ;
                                             owl:imports <http://emmo.info/emmo/1.0.0-beta3/middle/data> ,
                                                         <http://emmo.info/emmo/1.0.0-beta3/middle/persholistic> ,
-                                                        <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> .
+                                                        <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> ;
+                                            <http://purl.org/dc/terms/contributor> "Adham Hashibon (UCL)"@en ,
+                                                                                   "Jesper Friis (SINTEF)"@en ;
+                                            <http://purl.org/dc/terms/creator> "Emanuele Ghedini (UNIBO)"@en ;
+                                            <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+                                            rdfs:comment "Work funded by the EU - H2020 Project DOME 4.0 \"Digital Open Marketplace Ecosystem 4.0\", Grant n. 953163"@en .
 
 #################################################################
 #    Object Properties
