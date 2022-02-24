@@ -1,0 +1,268 @@
+@prefix : <http://emmo.info/emmo/domain/dome40#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://emmo.info/emmo/domain/dome40-emmo> .
+
+<http://emmo.info/emmo/domain/dome40-emmo> rdf:type owl:Ontology ;
+                                            owl:imports <http://emmo.info/emmo/1.0.0-beta3/middle/data> ,
+                                                        <http://emmo.info/emmo/1.0.0-beta3/middle/persholistic> ,
+                                                        <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_13b9526c_e49d_4e0a_9dc7_6bf769f9fff5
+<http://emmo.info/emmo#EMMO_13b9526c_e49d_4e0a_9dc7_6bf769f9fff5> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a> ;
+                                                                  rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_f09454b3_d217_4eed_a569_147e56aa1277> ;
+                                                                  skos:prefLabel "hasDataPublisher"@en .
+
+
+###  http://emmo.info/emmo#EMMO_2812e4c2_6209_4688_95f6_758d017f9c63
+<http://emmo.info/emmo#EMMO_2812e4c2_6209_4688_95f6_758d017f9c63> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a> ;
+                                                                  rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_e952a131_af44_4355_8ff0_f9f953f71bd1> ;
+                                                                  skos:prefLabel "hasDataCreator"@en .
+
+
+###  http://emmo.info/emmo#EMMO_67339084_e659_42be_9e76_7e22fca63c48
+<http://emmo.info/emmo#EMMO_67339084_e659_42be_9e76_7e22fca63c48> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b> ;
+                                                                  skos:prefLabel "hasURI"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6b9186c0_2da7_48b2_8429_68b6fd777098
+<http://emmo.info/emmo#EMMO_6b9186c0_2da7_48b2_8429_68b6fd777098> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76> ;
+                                                                  rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  skos:prefLabel "DataSubSetOf"@en .
+
+
+###  http://emmo.info/emmo#EMMO_893ddc7b_0a82_497d_a288_b0dbb2d2920e
+<http://emmo.info/emmo#EMMO_893ddc7b_0a82_497d_a288_b0dbb2d2920e> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  skos:prefLabel "hasHomepage"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a38631c1_f5ad_4b3b_aa97_8f1e1d1c9a8c
+<http://emmo.info/emmo#EMMO_a38631c1_f5ad_4b3b_aa97_8f1e1d1c9a8c> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_7763db68_9c54_42a1_a633_4a50b118fdee> ;
+                                                                  skos:prefLabel "hasRightsStatement"@en .
+
+
+###  http://emmo.info/emmo#EMMO_bea1bce9_0230_48dd_9772_d75708160ed3
+<http://emmo.info/emmo#EMMO_bea1bce9_0230_48dd_9772_d75708160ed3> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                                  rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  skos:prefLabel "isDerivedDataOf"@en .
+
+
+###  http://emmo.info/emmo#EMMO_dfb975c6_86a1_4127_933f_c5165622caf0
+<http://emmo.info/emmo#EMMO_dfb975c6_86a1_4127_933f_c5165622caf0> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_a38631c1_f5ad_4b3b_aa97_8f1e1d1c9a8c> ;
+                                                                  rdfs:range <http://emmo.info/emmo#EMMO_55cc670e_e39d_4f66_8f82_b2ddb6384e32> ;
+                                                                  skos:prefLabel "hasLicense"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_41347f6d_99a5_4006_8949_52ee3c98c3d3
+<http://emmo.info/emmo#EMMO_41347f6d_99a5_4006_8949_52ee3c98c3d3> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_8e67b894_37b8_4f9e_84b3_eeb34a915e11> ;
+                                                                  rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
+                                                                  rdfs:range xsd:dateTime ;
+                                                                  skos:prefLabel "hasIssueDate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_509f5a55_81e2_4ba7_86e5_d50866aa4b2d
+<http://emmo.info/emmo#EMMO_509f5a55_81e2_4ba7_86e5_d50866aa4b2d> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_6e873d9d_9aea_4345_abb2_3b5ce35ada53> ;
+                                                                  rdfs:range xsd:anyURI ;
+                                                                  skos:prefLabel "hasSemanticKeyword"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6e873d9d_9aea_4345_abb2_3b5ce35ada53
+<http://emmo.info/emmo#EMMO_6e873d9d_9aea_4345_abb2_3b5ce35ada53> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_8e67b894_37b8_4f9e_84b3_eeb34a915e11> ;
+                                                                  skos:prefLabel "hasKeywordData"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8009bede_37e0_40dc_b380_fd6477fc0006
+<http://emmo.info/emmo#EMMO_8009bede_37e0_40dc_b380_fd6477fc0006> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_509f5a55_81e2_4ba7_86e5_d50866aa4b2d> ;
+                                                                  skos:prefLabel "hasTypeKeyword"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8e67b894_37b8_4f9e_84b3_eeb34a915e11
+<http://emmo.info/emmo#EMMO_8e67b894_37b8_4f9e_84b3_eeb34a915e11> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                  skos:prefLabel "EMMO_DataProperties"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8ee8e261_6c6d_453f_86af_ea8ae3cf3f95
+<http://emmo.info/emmo#EMMO_8ee8e261_6c6d_453f_86af_ea8ae3cf3f95> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_509f5a55_81e2_4ba7_86e5_d50866aa4b2d> ;
+                                                                  skos:prefLabel "hasToolKeyword"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a2b3b0fe_d897_4ac8_921b_fa4d3db68166
+<http://emmo.info/emmo#EMMO_a2b3b0fe_d897_4ac8_921b_fa4d3db68166> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_8e67b894_37b8_4f9e_84b3_eeb34a915e11> ;
+                                                                  skos:prefLabel "hasTitleData"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a538de7a_f28b_4366_a7e3_3d918e1d9a09
+<http://emmo.info/emmo#EMMO_a538de7a_f28b_4366_a7e3_3d918e1d9a09> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_6e873d9d_9aea_4345_abb2_3b5ce35ada53> ;
+                                                                  skos:prefLabel "hasSyntacticKeyword"@en .
+
+
+###  http://emmo.info/emmo#EMMO_ac852bf0_3251_4d6b_9e57_acbfcb5e7e08
+<http://emmo.info/emmo#EMMO_ac852bf0_3251_4d6b_9e57_acbfcb5e7e08> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925> ;
+                                                                  skos:prefLabel "hasURLData"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925
+<http://emmo.info/emmo#EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_8e67b894_37b8_4f9e_84b3_eeb34a915e11> ;
+                                                                  rdfs:range xsd:anyURI ;
+                                                                  skos:prefLabel "hasURIData"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b7493aee_366c_442d_8f59_49ac7aa664d7
+<http://emmo.info/emmo#EMMO_b7493aee_366c_442d_8f59_49ac7aa664d7> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925> ;
+                                                                  skos:prefLabel "hasURNData"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f975c57e_c7c6_48b8_b9e5_5f40b81024d6
+<http://emmo.info/emmo#EMMO_f975c57e_c7c6_48b8_b9e5_5f40b81024d6> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_509f5a55_81e2_4ba7_86e5_d50866aa4b2d> ;
+                                                                  skos:prefLabel "hasIsAboutKeyword"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_36051b58_dfa0_4527_95d1_5590ab946380
+<http://emmo.info/emmo#EMMO_36051b58_dfa0_4527_95d1_5590ab946380> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490>
+                                                                                  ] ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_f09454b3_d217_4eed_a569_147e56aa1277>
+                                                                                  ] ;
+                                                                  skos:prefLabel "DataPublication"@en .
+
+
+###  http://emmo.info/emmo#EMMO_55cc670e_e39d_4f66_8f82_b2ddb6384e32
+<http://emmo.info/emmo#EMMO_55cc670e_e39d_4f66_8f82_b2ddb6384e32> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_7763db68_9c54_42a1_a633_4a50b118fdee> ;
+                                                                  skos:prefLabel "LicenseDocument"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b
+<http://emmo.info/emmo#EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf [ owl:intersectionOf ( <http://emmo.info/emmo#EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926>
+                                                                                                         <http://emmo.info/emmo#EMMO_ed257e78_8b59_44c3_9d61_06c261184f55>
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ] ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en ;
+                                                                  <http://emmo.info/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f> "URI = scheme \":\" [\"//\" authority] path [\"?\" query] [\"#\" fragment]"@en ;
+                                                                  skos:prefLabel "URI"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://emmo.info/emmo#EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b> ;
+   owl:annotatedProperty <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> ;
+   owl:annotatedTarget "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en ;
+   rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI
+ ] .
+
+
+###  http://emmo.info/emmo#EMMO_7763db68_9c54_42a1_a633_4a50b118fdee
+<http://emmo.info/emmo#EMMO_7763db68_9c54_42a1_a633_4a50b118fdee> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926> ;
+                                                                  skos:prefLabel "RightStatement"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8a8f664b_dc59_4e00_ae00_81fdf1e1d12e
+<http://emmo.info/emmo#EMMO_8a8f664b_dc59_4e00_ae00_81fdf1e1d12e> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b> ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The term \"Uniform Resource Locator\" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network \"location\")."@en ;
+                                                                  skos:prefLabel "URL"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://emmo.info/emmo#EMMO_8a8f664b_dc59_4e00_ae00_81fdf1e1d12e> ;
+   owl:annotatedProperty <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> ;
+   owl:annotatedTarget "The term \"Uniform Resource Locator\" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network \"location\")."@en ;
+   rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI
+ ] .
+
+
+###  http://emmo.info/emmo#EMMO_b8f6230b_94c8_49ad_833d_be104771e6bb
+<http://emmo.info/emmo#EMMO_b8f6230b_94c8_49ad_833d_be104771e6bb> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_7763db68_9c54_42a1_a633_4a50b118fdee> ;
+                                                                  skos:prefLabel "LicenseName"@en .
+
+
+###  http://emmo.info/emmo#EMMO_db99b1e5_2f34_467b_a784_d104946d9f00
+<http://emmo.info/emmo#EMMO_db99b1e5_2f34_467b_a784_d104946d9f00> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b> ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en ;
+                                                                  skos:prefLabel "URN"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://emmo.info/emmo#EMMO_db99b1e5_2f34_467b_a784_d104946d9f00> ;
+   owl:annotatedProperty <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> ;
+   owl:annotatedTarget "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en ;
+   rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI
+ ] .
+
+
+###  http://emmo.info/emmo#EMMO_e952a131_af44_4355_8ff0_f9f953f71bd1
+<http://emmo.info/emmo#EMMO_e952a131_af44_4355_8ff0_f9f953f71bd1> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_2480b72b_db8d_460f_9a5f_c2912f979046> ;
+                                                                  skos:prefLabel "DataCreator"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f09454b3_d217_4eed_a569_147e56aa1277
+<http://emmo.info/emmo#EMMO_f09454b3_d217_4eed_a569_147e56aa1277> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_2480b72b_db8d_460f_9a5f_c2912f979046> ;
+                                                                  skos:prefLabel "DataPublisher"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f8167670_18f6_483c_a19f_7c0badf4ab61
+<http://emmo.info/emmo#EMMO_f8167670_18f6_483c_a19f_7c0badf4ab61> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490>
+                                                                                  ] ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_e952a131_af44_4355_8ff0_f9f953f71bd1>
+                                                                                  ] ;
+                                                                  skos:prefLabel "DataCreation"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
