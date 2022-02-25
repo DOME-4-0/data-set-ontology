@@ -17,7 +17,9 @@ The semantic rich environment of the EMMO can be used to document data within a 
                                                            "Jesper Friis (SINTEF)"@en ;
                                        dcterms:creator "Emanuele Ghedini (UNIBO)"@en ;
                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
-                                       rdfs:comment "Work funded by the EU - H2020 Project DOME 4.0 \"Digital Open Marketplace Ecosystem 4.0\", Grant n. 953163"@en .
+                                       rdfs:comment """The FaCT++ reasoner in Protégé does not support the xsd:duration datatype that is used in DCAT as type for the 'temporal resolution' property. HermiT does support all datatypes, but is considerably less performant then FaCT++ in Protégé.
+When working with Protégé the suggestion is to remove the xsd:duration type for the session on the volatile version of DCAT hosted by the interface locally."""@en ,
+                                                    "Work funded by the EU - H2020 Project DOME 4.0 \"Digital Open Marketplace Ecosystem 4.0\", Grant n. 953163"@en .
 
 #################################################################
 #    Annotation properties

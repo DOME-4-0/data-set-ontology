@@ -23,7 +23,8 @@
 
 ###  http://emmo.info/emmo#EMMO_13b9526c_e49d_4e0a_9dc7_6bf769f9fff5
 <http://emmo.info/emmo#EMMO_13b9526c_e49d_4e0a_9dc7_6bf769f9fff5> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a> ;
+                                                                  rdfs:subPropertyOf [ owl:inverseOf <http://emmo.info/emmo#EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a>
+                                                                                     ] ;
                                                                   rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
                                                                   rdfs:range <http://emmo.info/emmo#EMMO_f09454b3_d217_4eed_a569_147e56aa1277> ;
                                                                   skos:prefLabel "hasDataPublisher"@en .
@@ -31,7 +32,8 @@
 
 ###  http://emmo.info/emmo#EMMO_2812e4c2_6209_4688_95f6_758d017f9c63
 <http://emmo.info/emmo#EMMO_2812e4c2_6209_4688_95f6_758d017f9c63> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a> ;
+                                                                  rdfs:subPropertyOf [ owl:inverseOf <http://emmo.info/emmo#EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a>
+                                                                                     ] ;
                                                                   rdfs:domain <http://emmo.info/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490> ;
                                                                   rdfs:range <http://emmo.info/emmo#EMMO_e952a131_af44_4355_8ff0_f9f953f71bd1> ;
                                                                   skos:prefLabel "hasDataCreator"@en .
