@@ -9,8 +9,7 @@
 @base <http://emmo.info/emmo/domain/dome40> .
 
 <http://emmo.info/emmo/domain/dome40> rdf:type owl:Ontology ;
-                                       owl:imports <http://emmo.info/emmo/domain/dome40-emmo> ,
-                                                   <http://www.w3.org/ns/dcat> ;
+                                       owl:imports <http://emmo.info/emmo/domain/dome40-emmo> ;
                                        dcterms:abstract """This ontology module provides mapping of EMMO concepts for semantic data exchange with the DCAT vocabulary for the DOME4.0 project.
 The semantic rich environment of the EMMO can be used to document data within a framework that provides mereological, causal and semiotic relations, that cast a corresponding DCAT documentation thanks to the mapping here provided."""@en ;
                                        dcterms:contributor "Adham Hashibon (UCL)"@en ,
