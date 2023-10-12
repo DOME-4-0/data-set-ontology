@@ -8,9 +8,9 @@
 @base <http://emmo.info/emmo/domain/dome40-emmo> .
 
 <http://emmo.info/emmo/domain/dome40-emmo> rdf:type owl:Ontology ;
-                                            owl:imports <http://emmo.info/emmo/1.0.0-beta3/middle/data> ,
-                                                        <http://emmo.info/emmo/1.0.0-beta3/middle/persholistic> ,
-                                                        <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> ;
+                                            owl:imports <http://emmo.info/emmo/1.0.0-beta5/perspectives/data> ,
+                                                        <http://emmo.info/emmo/1.0.0-beta5/multiperspective/persholistic> ,
+                                                        <http://emmo.info/emmo/1.0.0-beta5/perspectives/semiotics> ;
                                             <http://purl.org/dc/terms/contributor> "Adham Hashibon (UCL)"@en ,
                                                                                    "Jesper Friis (SINTEF)"@en ;
                                             <http://purl.org/dc/terms/creator> "Emanuele Ghedini (UNIBO)"@en ;
